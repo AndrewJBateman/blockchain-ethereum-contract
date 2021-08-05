@@ -1,0 +1,32 @@
+{
+  "name": "blockchain-ethereum-contract",
+  "version": "1.0.0",
+  "description": "* Truffle Framework used to create an Ethereum app using Javascript and Solidity. * **Note:** to open web links in a new window use: _ctrl+click on link_",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewJBateman/blockchain-ethereum-contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewJBateman/blockchain-ethereum-contract/issues"
+  },
+  "homepage": "https://github.com/AndrewJBateman/blockchain-ethereum-contract#readme",
+  "dependencies": {
+    "@truffle/contract": "^4.3.27",
+    "bootstrap": "^5.1.0",
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4"
+  }
+}
