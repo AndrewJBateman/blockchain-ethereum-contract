@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethereum Tasks</title>
+		<link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <!-- Google icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+	<body>
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-md-4 mb-2">
+					<div class="card card-body bg-light rounded-0 mb-4">
+						<h3>
+							<span class="material-icons">assignment</span>
+							DApp Tasks
+						</h3>
+						<div class="d-flex align-items-center">
+							<span class="material-icons"> account_balance</span>
+							<span class="ms-2">Wallet</span>
+						</div>
+						<span id="account"></span>
+					</div>
+
+					<form id="taskForm" class="card card-body bg-light">
+						<h4>Save Task</h4>
+						<input
+							type="text"
+							id="title"
+							class="form-control bg-light border-0 rounded-0 my-4"
+							placeholder="Task title..."
+							autofocus
+						/>
+						<textarea
+							id="description"
+							rows="2"
+							class="form-control bg-light border-0 rounded-0 my-2"
+							placeholder="Task description..."
+						></textarea>
+						<button class="btn btn-primary">save</button>
+					</form>
+				</div>
+				<div class="col-md-8">
+					<div id="tasksList"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <script src="/libs/web3/dist/web3.min.js"></script> -->
+		<script src="/libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+		<script src="./app.js"></script>
+		<script src="./ui.js"></script>
+	</body>
+</html>
